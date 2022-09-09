@@ -24,3 +24,5 @@ await verify(basicNft.address, args)
     }
     log("-----------------------------")
 }
+
+module.exports.tags = ["all", "basicnft", "main"]
