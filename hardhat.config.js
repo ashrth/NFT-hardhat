@@ -30,6 +30,7 @@ module.exports = {
             blockConfirmations: 6,
             url: RINKEBY_RPC_URL,
             accounts: [PRIVATE_KEY],
+            //gas: 600000000,
         },
         // goerli: {
         //     chainId: 5,
