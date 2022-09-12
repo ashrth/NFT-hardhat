@@ -1,3 +1,5 @@
+const { ethers } = require("ethers");
+
 const networkConfig = {
     31337: {
         name: "localhost",
