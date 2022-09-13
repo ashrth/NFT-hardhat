@@ -18,6 +18,13 @@ const metadataTemplate = {
     name: "",
     description: "",
     image: "",
+    attributes: [
+        // just an adorable addition for da pups :p
+        {
+            trait_type: "Cuteness",
+            value: 100,
+        },
+    ],
 }
 
 const FUND_AMOUNT = "100000000000000000000"
@@ -56,7 +63,7 @@ module.exports = async function ({ getNamedAccounts, deployments }) {
         subscriptionId,
         networkConfig[chainId].gasLane,
         networkConfig[chainId].callbackGasLimit,
-networkConfig[chainId].mintFee,
+        networkConfig[chainId].mintFee,
         tokenUris,
     ]
     const randomIpfsNft = await deploy("RandomIpfsNft", {

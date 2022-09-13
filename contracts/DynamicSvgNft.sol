@@ -3,10 +3,13 @@
 pragma solidity ^0.8.7;
 
 import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/access/Ownable.sol";
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 import "base64-sol/base64.sol";
+import "hardhat/console.sol";
 
-contract DynamicSvgNft is ERC721 {
+
+contract DynamicSvgNft is ERC721, Ownable {
     // In this contract we will:
     // mint the nft
     // store our SVG information somewhere
